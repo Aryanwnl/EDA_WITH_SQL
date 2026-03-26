@@ -24,43 +24,142 @@ This project uses SQL-based analytics to answer these business questions through
 ## Analytical Approach
 
 ### 1. Database Exploration
-Initial exploration of available tables and columns to understand the data structure and prepare the environment for analysis.
+Understanding available tables and column structures to confirm schema consistency and data readiness.
 
 ### 2. Dimension Exploration
-Examination of customer and product dimensions to understand categories, geographic spread, and descriptive business attributes.
+Examining customer demographics and product categories to understand the descriptive structure of the business environment.
 
 ### 3. Date Range Exploration
-Analysis of temporal boundaries in the dataset, including the first and last order date and the customer age range. This helps establish the historical scope of the data.
+Identifying minimum and maximum order dates and customer age boundaries to determine the historical coverage of the dataset.
 
 ### 4. Measures Exploration
-Calculation of core business metrics such as total sales, total quantity sold, average selling price, total orders, total products, and total customers. This provides a baseline summary of business performance.
+Calculating foundational business metrics such as total sales, total quantity sold, average price, total orders, total products, and total customers.
 
 ### 5. Magnitude Analysis
-Evaluation of business size across categories, countries, customers, and products using aggregated metrics.
+Measuring overall business scale across categories, countries, customers, and products using aggregated metrics.
 
 ### 6. Ranking Analysis
-Identification of top-performing and low-performing customers and products through ranking logic.
+Identifying top-performing and lowest-performing customers and products using ranking logic.
 
 ### 7. Change Over Time Analysis
-Tracking of sales and business activity across time to identify trends and patterns.
+Evaluating how business performance evolves across months and years to identify trends and patterns.
 
 ### 8. Cumulative Analysis
-Use of window functions to calculate running totals and moving averages for performance tracking.
+Using window functions to compute running totals and moving averages for long-term performance tracking.
 
 ### 9. Performance Analysis
-Comparison of current performance against historical averages and previous periods.
+Comparing current performance with historical averages and previous time periods to assess growth or decline.
 
 ### 10. Data Segmentation
-Classification of customers and products into meaningful business groups for decision-making.
+Classifying customers and products into interpretable groups such as:
+
+- VIP customers
+- Regular customers
+- New customers
+- High-performing products
+- Mid-range products
+- Low-performing products
 
 ### 11. Part-to-Whole Analysis
-Measurement of how much each category contributes to total revenue.
+Calculating percentage contribution of each category to total revenue.
 
 ### 12. Customer Report
-Creation of a reusable reporting layer with customer-level KPIs.
+Creating a reusable analytical view containing customer-level KPIs such as:
+
+- total orders
+- total revenue
+- total quantity purchased
+- customer lifespan
+- recency
+- average order value
+- customer segment
 
 ### 13. Product Report
-Creation of a reusable reporting layer with product-level KPIs.
+Creating a reusable analytical view containing product-level KPIs such as:
+
+- total sales
+- total customers
+- average selling price
+- monthly revenue
+- product performance category
+
+---
+
+## Analytical Rigor
+
+This project applies a structured analytical methodology to ensure logical consistency, reproducibility, and interpretability of results.
+
+### Structured Analytical Framework
+
+**Data Understanding**
+- Identification of entities, attributes, and relationships
+- Validation of schema consistency across fact and dimension tables
+
+**Metric Construction**
+- Definition of KPIs using standardized aggregation logic
+- Consistent calculation of revenue, quantity, and customer activity measures
+
+**Temporal Consistency**
+- Standardization of time intervals using date truncation logic
+- Separation of trend analysis from point-in-time evaluation
+
+**Window Function Logic**
+- Use of cumulative metrics to analyze long-term growth
+- Use of moving averages to reduce volatility in temporal patterns
+- Period-over-period comparison using lag functions
+
+**Ranking and Relative Comparison**
+- Identification of distribution extremes using ranking logic
+- Comparative evaluation across customers and products
+
+**Segmentation Validity**
+- Construction of interpretable categorical groupings from quantitative metrics
+- Alignment of segmentation thresholds with observed data distribution
+
+**Part-to-Whole Consistency**
+- Verification that segmented contributions reconcile with total revenue values
+
+**Reproducibility**
+- Modular SQL scripts enabling step-by-step verification
+- Logical separation between exploration and reporting layers
+
+**Scalability**
+- Dimensional model supports extension to additional entities
+- Query design adaptable to larger datasets and BI tools
+
+---
+
+## SQL Techniques Used
+- Aggregation functions (SUM, AVG, COUNT)
+- Joins between fact and dimension tables
+- Window functions (SUM OVER, AVG OVER, LAG, RANK)
+- Date functions for time-based analysis
+- CASE statements for segmentation
+- View creation for reusable reports
+- Dimensional modeling concepts
+
+---
+
+## Key Insights Generated
+The project enables identification of:
+
+- revenue trends over time
+- high-value customers
+- top-performing products
+- purchasing behavior patterns
+- category contribution to total revenue
+- long-term business performance indicators
+
+These insights support data-driven decision-making across sales and marketing functions.
+
+---
+
+## Tools and Technologies
+- SQL (T-SQL)
+- SQL Server
+- Dimensional Data Modeling
+- Analytical SQL Queries
+- Window Functions
 
 ## Author
 Aryan Ninad Dalvi  
