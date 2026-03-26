@@ -21,32 +21,6 @@ Organizations collect large volumes of transactional data but often lack structu
 
 This project uses SQL-based analytics to answer these business questions through a structured analytical workflow.
 
-## Project Structure
-
-EDA_WITH_SQL
-│
-├── Dataset
-│   ├── gold.dim_customers.csv
-│   ├── gold.dim_products.csv
-│   └── gold.fact_sales.csv
-│
-├── Scripts
-│   ├── 00_database.sql
-│   ├── 01_database_expploration.sql
-│   ├── 02_dimension_exploration.sql
-│   ├── 03_date_range_exploration.sql
-│   ├── 04_measures_exploration.sql
-│   ├── 05_magnitude_analysis.sql
-│   ├── 06_Ranking_analysis.sql
-│   ├── 07_Change_over_time_analysis.sql
-│   ├── 08_Cumulative_analysis.sql
-│   ├── 09_performance_analysis.sql
-│   ├── 10_data_segmentation.sql
-│   ├── 11_Part_to_whole_analysis.sql
-│   ├── 12_Report_customer.sql
-│   └── 13_Report_product.sql
-
-
 ## Analytical Approach
 
 ### 1. Database Exploration
