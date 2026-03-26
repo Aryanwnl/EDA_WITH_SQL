@@ -12,9 +12,9 @@ SQL Functions Used:
 ===============================================================================
 */
 
--- Which 5 products Generating the Highest Revenue?
+-- Which 10 products Generating the Highest Revenue?
 -- Simple Ranking
-SELECT TOP 5
+SELECT TOP 10
     p.product_name,
     SUM(f.sales_amount) AS total_revenue
 FROM gold.fact_sales f
@@ -62,8 +62,8 @@ GROUP BY
     c.last_name
 ORDER BY total_revenue DESC;
 
--- The 3 customers with the fewest orders placed
-SELECT TOP 3
+-- The 7 customers with the fewest orders placed
+SELECT TOP 7
     c.customer_key,
     c.first_name,
     c.last_name,
