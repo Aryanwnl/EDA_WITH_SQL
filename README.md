@@ -1,5 +1,26 @@
 # EDA_WITH_SQL
 
+## Executive Summary
+This project demonstrates how SQL can be used to perform end-to-end exploratory data analysis (EDA) on structured business data using a dimensional data warehouse model. The objective is to simulate how organizations transform raw transactional data into meaningful insights that support strategic decision-making.
+
+Using customer, product, and sales datasets, the project applies advanced SQL techniques such as joins, aggregations, window functions, ranking, segmentation, and time-based analysis to evaluate business performance. The analysis generates insights related to revenue trends, customer value, product performance, and category-level contribution to overall sales.
+
+The project concludes with reusable reporting views that calculate key performance indicators (KPIs) for customers and products. These outputs illustrate how SQL can be used not only for querying data but also for constructing scalable analytical solutions aligned with real-world data warehouse practices.
+
+---
+
+## Problem Statement
+Organizations collect large volumes of transactional data but often lack structured approaches for converting this data into actionable insights. Decision makers require answers to questions such as:
+
+- Which products generate the most revenue?
+- Who are the most valuable customers?
+- How does revenue change over time?
+- What percentage of total revenue comes from each category?
+- Which customers should be targeted for retention strategies?
+- Which products are high-performing or underperforming?
+
+This project uses SQL-based analytics to answer these business questions through a structured analytical workflow.
+
 ## Project Structure
 
 EDA_WITH_SQL
